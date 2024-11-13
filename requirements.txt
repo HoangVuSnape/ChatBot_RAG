@@ -1,0 +1,9 @@
+accelerate
+fastapi
+langchain==0.1.13
+langchain_community==0.0.29
+langchain_text_splitters==0.0.1
+pydantic==2.6.4
+requests
+streamlit
+uvicorn
