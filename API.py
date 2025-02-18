@@ -53,6 +53,7 @@ db = read_vectors_db()
 llm = load_llm(model_file)
 template = """system\nSử dụng thông tin sau đây để trả lời câu hỏi. Nếu bạn không biết câu trả lời, hãy nói không biết, đừng cố tạo ra câu trả lời\n
     {context}\nuser\n{question}\nassistant"""
+    
 prompt = creat_prompt(template)
 llm_chain = create_qa_chain(prompt, llm, db)
 
